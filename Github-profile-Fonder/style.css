@@ -1,0 +1,191 @@
+
+      body{
+          position:relative;
+      }
+      
+      .Profile{
+          position:relative;
+          z-index:10;
+      }
+      
+      body::before,
+      body::after{
+          z-index:-1;
+      }
+
+        body{
+    margin:37px;
+    min-height:100vh;
+    background:
+    radial-gradient(circle at top left,#3b82f6 0%,transparent 35%),
+    radial-gradient(circle at bottom right,#9333ea 0%,transparent 35%),
+    #050816;
+    overflow:hidden;
+    position:relative;
+}
+
+body::before{
+    content:"";
+    position:absolute;
+    inset:0;
+    background:
+    radial-gradient(white 1px,transparent 1px);
+    background-size:50px 50px;
+    opacity:.15;
+}
+
+body::after{
+    content:"";
+    position:absolute;
+    width:350px;
+    height:350px;
+    background:#2563eb;
+    border-radius:50%;
+    filter:blur(120px);
+    top:-100px;
+    left:-100px;
+    opacity:.4;
+}
+
+
+          .Profile{
+            display: flex;
+            justify-self: center;
+            align-items: center;
+            flex-direction: column;
+            background-color: rgb(40, 40, 40);
+            max-width: fit-content;
+            max-height: fit-content;
+            border-radius: 20px;
+            padding: 20px 40px ;
+            padding-bottom: 60px;
+          }
+
+          .imgg{
+            width: 50px;
+            height: 50px;
+            border-radius: 53px;
+          }
+
+          .Profile:hover{
+                 transform:translateY(-4px);
+                 box-shadow:0 15px 30px rgba(228, 228, 228, 0.25);
+          }
+
+          .btn{
+            display: flex;
+            gap: 8px;
+          }
+
+          #find{
+            display: flex;
+            justify-content: center;
+            padding: 16px;
+            border: none;
+            border-radius: 20px;
+            font-size: 20px;
+            width: 250px;
+          }
+
+          .heading{
+            text-align: center;
+            margin: 20px 30px;
+            color: white;
+          }
+
+          button{
+            padding: 16px;
+            border: none;
+            font-size: 20px;
+            border-radius: 20px;
+            width: 120px;
+          }
+
+          button:hover{
+            background: linear-gradient(240deg , rgb(251, 134, 251), rgb(116, 116, 248), rgb(165, 219, 241));
+          }
+
+          .empty{
+          max-height: 80vh;
+           display: flex;
+            justify-self: center;
+            align-items: center;
+            flex-direction: row;
+            gap: 200px;
+            margin-top: 50px;
+            color: aliceblue;
+          }
+          .empty h3{
+            color: rgb(255, 255, 255);
+          }
+
+          .empty h3{
+              background:rgba(255,255,255,.08);
+              border:1px solid rgba(255,255,255,.12);
+              border-radius:20px;
+              padding:18px;
+              transition:.3s;
+              position:relative;
+              overflow:hidden;
+              height: 50px;
+          }
+
+              .empty h3::before{
+                content:"";
+                position:absolute;
+                inset:0;
+            background:linear-gradient(
+            135deg,
+            rgba(255,255,255,.15),
+            transparent
+        );
+
+                 opacity:0;
+                 transition:.3s;
+          }
+          .empty h3:hover::before{
+                 opacity:1;
+          }
+
+          .empty h3:hover{
+                 transform:translateY(-6px);
+                 box-shadow:0 15px 30px rgba(0,0,0,.25);
+          }
+  
+
+          .empty button{
+            width: 200px;
+            border: none;
+            color: rgb(0, 0, 0);
+        }
+        
+        .empty a{
+              text-decoration: none;
+          }
+
+          .image{
+            width: 200px;
+            height: 200px;
+            border-radius: 100px;
+            border: 3px solid rgb(71, 195, 245);
+          }
+
+          .flex{
+            display: block;
+            justify-content: center;
+            flex-direction: column;
+          }
+
+
+        .inner-div{
+          display:grid;
+    grid-template-columns:repeat(2,1fr);
+    gap:16px;
+        }
+
+        .empty span{
+          display: flex;
+          flex-direction: row;
+          align-items: center;
+          color: rgb(71, 195, 245);
+        }
